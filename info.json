@@ -18,7 +18,7 @@
 	],
 
 	"project":[
-	{"project_detail":"<b>个人简历：</b>使用html，css，原生javascript开发制作，github地址：<a href=\"\">我的简历</a>"},
+	{"project_detail":"<b>个人简历：</b>使用html，css，原生javascript开发制作，github地址：<a href=\"https://github.com/jokerhing/Resume.git\">我的简历</a>"},
 	{"project_detail":"<b>2014年-2015年：</b>在校学习期间，将其中一次与同学（一位java后台）合作的物流系统的前端页面上传至申请的免费空间，网站基于Meterialize前端框架完成设计与制作，使用jQuery的ajax技术完成与后台返回的JSON数据的处理与用户的交互，gitgub地址： <a href=\"https://github.com/jokerhing/homework.git\">https://github.com/jokerhing/homework.git</a> "},
 	{"project_detail":"<b>2015年1月-2015年3月：</b>加入学校学生组建的蚂蚁工作室，并进行仿众筹网前端页面的开发，但是工作室负责人发现该市场并不成熟，所以放弃了"},
 	{"project_detail":"<b>2015年4月-2015年6月：</b>加入原工作室所成立的重庆市你好世界科技有限公司，并由我一人负责app产品 “诚客兼职” 的网页前端开发工作，由于前期缺乏设计师，所以基于前端框架Materialize完成了网站的设计。并基于ajax开发了该网站，完成了改网站的交互功能，由于起初产品且没有进行大力推广。只有内部人员使用发布兼职。地址：<a href=\"http://121.42.151.165/\">中文域名 http://www.诚客兼职.com/</a> "},
