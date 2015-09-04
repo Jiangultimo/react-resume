@@ -18,12 +18,12 @@
 	],
 
 	"project":[
-	{"project_detail":"<b>个人简历：</b>使用html，css，原生javascript开发制作，GitHub地址：<a href=\"https://github.com/jokerhing/Resume.git\">https://github.com/jokerhing/Resume.git</a>"},
-	{"project_detail":"<b>2014年-2015年：</b>在校学习期间，将其中一次与同学（一位java后台）合作的物流系统的前端页面上传至申请的免费空间，网站基于Meterialize前端框架完成设计与制作，使用jQuery的ajax技术完成与后台返回的JSON数据的处理与用户的交互，GitHub地址： <a href=\"https://github.com/jokerhing/homework.git\">https://github.com/jokerhing/homework.git</a> "},
-	{"project_detail":"<b>2015年1月-2015年3月：</b>加入学校学生组建的蚂蚁工作室，并进行仿众筹网前端页面的开发，但是工作室负责人发现该市场并不成熟，所以放弃了。自己制作了一个简单的ps教程网页版GitHub地址：<a href=\"https://github.com/jokerhing/get_gif/\">https://github.com/jokerhing/get_gif/</a>"},
-	{"project_detail":"<b>2015年4月-2015年6月：</b>加入原工作室所成立的重庆市你好世界科技有限公司，并由我一人负责app产品 “诚客兼职” 的网页前端开发工作，由于前期缺乏设计师，所以基于前端框架Materialize完成了网站的设计。并基于ajax开发了该网站，完成了改网站的交互功能，由于起初产品且没有进行大力推广。只有内部人员使用发布兼职。GitHub地址：<a href=\"https://github.com/jokerhing/chengkejianzhi/\">https://github.com/jokerhing/chengkejianzhi/</a> "},
+	{"project_detail":"<b>个人简历：</b>使用html，css，原生javascript开发制作，GitHub:<a href=\"https://github.com/jokerhing/Resume.git\">https://github.com/jokerhing/Resume.git</a>"},
+	{"project_detail":"<b>2014年-2015年：</b>学习期间，与同学（一位java后台）合作的物流管理网站的开发，网站基于Meterialize前端框架完成设计与制作，使用jQuery的ajax技术完成数据处理与用户交互，GitHub:<a href=\"https://github.com/jokerhing/homework.git\">https://github.com/jokerhing/homework.git</a> "},
+	{"project_detail":"<b>2015年1月-2015年3月：</b>加入学生成立蚂蚁工作室，进行仿众筹网前端开发。自己制作了一个简单的ps教程网页版<a href=\"https://github.com/jokerhing/get_gif/\">GitHub地址</a>"},
+	{"project_detail":"<b>2015年4月-2015年6月：</b>加入原工作室所成立的重庆市你好世界科技有限公司，并由我一人负责app产品 “诚客兼职” 的网页前端开发工作，由于前期缺乏设计师，所以基于前端框架Materialize完成了网站的设计。并基于ajax开发了该网站，完成了该网站的交互功能。GitHub:<a href=\"https://github.com/jokerhing/chengkejianzhi/\">https://github.com/jokerhing/chengkejianzhi/</a> "},
 	{"project_detail":"<b>2015年7月至今：</b>产品改版，目前负责网站版本2.0的开发，根据设计师所做出的网页设计图，由我一人通过ps切图，使用html，css代码构建出完整的页面，使用jQuery完成与用户的交互逻辑。"},
-	{"project_detail":"<b>2015年7月-8月：</b>由于推行微信公众号，由我负责并完成了微信端页面的设计与开发，同样使用ajax技术完成对后台返回的JSON数据的处理与用户的交互。微信兼职列表GitHub地址：<a href=\"https://github.com/jokerhing/wechat_joglist/\">https://github.com/jokerhing/wechat_joglist/</a>；渝高校招聘信息GitHub地址：<a href=\"https://github.com/jokerhing/college_info/\">https://github.com/jokerhing/college_info/</a>。并从其中学习到了一定的移动端知识"},
+	{"project_detail":"<b>2015年7月-8月：</b>由于推行微信公众号，由我负责并完成了微信端页面的设计与开发，同样使用ajax技术完成对后台返回的JSON数据的处理与用户的交互。<br />微信兼职列表GitHub:<a href=\"https://github.com/jokerhing/wechat_joglist/\">https://github.com/jokerhing/wechat_joglist/</a>；<br />渝高校招聘信息GitHub:<a href=\"https://github.com/jokerhing/college_info/\">https://github.com/jokerhing/college_info/</a>。并从其中学习到了一定的移动端知识"},
 	{"project_detail":"<b>2015年8月：</b>参加一个微商城的项目，通过与后端的沟通，使用bootstrap完成前端页面的设计与开发。"}
 	],
 	"language":{
