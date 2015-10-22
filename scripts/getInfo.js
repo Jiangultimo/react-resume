@@ -12,7 +12,7 @@ var loadInfo = {
                 var data = JSON.parse( request.responseText );//解析json
                 if(data){
                     console.log(data.info[0].info_detail);
-                    this.getDetail(data);
+                    loadInfo.getDetail(data);
                 }
             }
         }
