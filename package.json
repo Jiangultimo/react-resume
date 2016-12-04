@@ -1,0 +1,22 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "personal resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neras/Resume.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "Hing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neras/Resume/issues"
+  },
+  "homepage": "https://github.com/Neras/Resume#readme"
+}
