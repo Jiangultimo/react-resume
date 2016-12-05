@@ -1,36 +1,36 @@
 {
-	"info":[
-		{"info_detail":"姓名：蒋正兴"},
-		{"info_detail":"基本：男，1993 年 5 月29出生，团员，籍贯：重庆 铜梁"},
-		{"info_detail":"地址：重庆市南岸区南山崇文路2号（重庆邮电大学） 400065"},
-		{"info_detail":"联系电话：18203096625"},
-		{"info_detail":"邮箱：youyaoguai@outlook.com"},
-		{"info_detail":"在读院校：重庆邮电大学，软件工程学院(2012级)，本科"}
-	],
-	"skill":[
-	{"skill_detail":"熟悉css、html,能够手并符合w3c标准的代码"},
-	{"skill_detail":"熟悉javascript的编写，熟悉使用jQuery框架"},
-	  {"skill_detail":"能够熟练使用Git常用命令"},
-	{"skill_detail":"能够手写html和css代码将ps设计稿还原出来"},
-	{"skill_detail":"学习过java，了解java并能看懂代码"},
-	{"skill_detail":"了解html5，css3"},
-	{"skill_detail":"具有较强的沟通能力，分析和解决问题的能力，具备良好的团队合作精神"}
+    "info": [
+        { "info_detail": "姓名：蒋正兴" },
+        { "info_detail": "基本：男，1993 年 5 月29出生，团员，籍贯：重庆 铜梁" },
+        { "info_detail": "地址：重庆市南岸区南山崇文路2号（重庆邮电大学） 400065" },
+        { "info_detail": "联系电话：18203096625" },
+        { "info_detail": "邮箱：youyaoguai@outlook.com" },
+        { "info_detail": "在读院校：重庆邮电大学，软件工程学院(2012级)，本科" }
+    ],
+    "skill": [
+        { "skill_detail": "熟悉css、html,能够手并符合w3c标准的代码" },
+        { "skill_detail": "熟悉javascript的编写，熟悉使用jQuery框架" },
+        { "skill_detail": "能够熟练使用Git常用命令" },
+        { "skill_detail": "能够手写html和css代码将ps设计稿还原出来" },
+        { "skill_detail": "学习过java，了解java并能看懂代码" },
+        { "skill_detail": "了解html5，css3" },
+        { "skill_detail": "具有较强的沟通能力，分析和解决问题的能力，具备良好的团队合作精神" }
 
-	],
+    ],
 
-	"project":[
-	{"project_detail":"<b>个人简历：</b>使用html，css，原生javascript开发制作，GitHub:<a href=\"https://github.com/jokerhing/Resume.git\">https://github.com/jokerhing/Resume.git</a>"},
-	{"project_detail":"<b>2014年-2015年：</b>学习期间，与同学（一位java后台）合作的物流管理网站的开发，网站基于Meterialize前端框架完成设计与制作，使用jQuery的ajax技术完成数据处理与用户交互，GitHub:<a href=\"https://github.com/jokerhing/homework.git\">https://github.com/jokerhing/homework.git</a> "},
-	{"project_detail":"<b>2015年1月-2015年3月：</b>加入学生成立蚂蚁工作室，进行仿众筹网前端开发。自己制作了一个简单的ps教程网页版<a href=\"https://github.com/jokerhing/get_gif/\">GitHub地址</a>"},
-	{"project_detail":"<b>2015年4月-2015年6月：</b>加入原工作室所成立的重庆市你好世界科技有限公司，并由我一人负责app产品 “诚客兼职” 的网页前端开发工作，由于前期缺乏设计师，所以基于前端框架Materialize完成了网站的设计。并基于ajax开发了该网站，完成了该网站的交互功能。GitHub:<a href=\"https://github.com/jokerhing/chengkejianzhi/\">https://github.com/jokerhing/chengkejianzhi/</a> "},
-	{"project_detail":"<b>2015年7月至今：</b>产品改版，目前负责网站版本2.0的开发，根据设计师所做出的网页设计图，由我一人通过ps切图，使用html，css代码构建出完整的页面，使用jQuery完成与用户的交互逻辑。"},
-	{"project_detail":"<b>2015年7月-8月：</b>由于推行微信公众号，由我负责并完成了微信端页面的设计与开发，同样使用ajax技术完成对后台返回的JSON数据的处理与用户的交互。<br />微信兼职列表GitHub:<a href=\"https://github.com/jokerhing/wechat_joglist/\">https://github.com/jokerhing/wechat_joglist/</a>；<br />渝高校招聘信息GitHub:<a href=\"https://github.com/jokerhing/college_info/\">https://github.com/jokerhing/college_info/</a>。并从其中学习到了一定的移动端标签知识"},
-	{"project_detail":"<b>2015年8月：</b>参加一个微商城的项目，通过与后端的沟通，使用bootstrap完成前端页面的设计与开发。"},
-	  {"project_detail":"<b>2015年10月：</b>原工作室创建新项目，目前为其项目编写后台管理页面，所有数据与用户交互均通过使用jQuery的ajax完成。"}
-	],
-	"language":{
-		"english":"<b>英语：</b>CET-4级(464分)，有良好的英语阅读能力和理解能力以及听力",
-		"chinese":"<b>中文：</b>普通话水平测试二级乙等(85分)"
-	},
-	"myself":"拥有足够的好奇心，对于新奇的事物敢于尝试。拥有良好的自学能力。和善，好沟通。对于互联网有着极大的热情"
+    "project": [
+        { "project_detail": "<b>个人简历：</b>使用html，css，原生javascript开发制作，GitHub:<a href=\"https://github.com/jokerhing/Resume.git\">https://github.com/jokerhing/Resume.git</a>" },
+        { "project_detail": "<b>2014年-2015年：</b>学习期间，与同学（一位java后台）合作的物流管理网站的开发，网站基于Meterialize前端框架完成设计与制作，使用jQuery的ajax技术完成数据处理与用户交互，GitHub:<a href=\"https://github.com/jokerhing/homework.git\">https://github.com/jokerhing/homework.git</a> " },
+        { "project_detail": "<b>2015年1月-2015年3月：</b>加入学生成立蚂蚁工作室，进行仿众筹网前端开发。自己制作了一个简单的ps教程网页版<a href=\"https://github.com/jokerhing/get_gif/\">GitHub地址</a>" },
+        { "project_detail": "<b>2015年4月-2015年6月：</b>加入原工作室所成立的重庆市你好世界科技有限公司，并由我一人负责app产品 “诚客兼职” 的网页前端开发工作，由于前期缺乏设计师，所以基于前端框架Materialize完成了网站的设计。并基于ajax开发了该网站，完成了该网站的交互功能。GitHub:<a href=\"https://github.com/jokerhing/chengkejianzhi/\">https://github.com/jokerhing/chengkejianzhi/</a> " },
+        { "project_detail": "<b>2015年7月至今：</b>产品改版，目前负责网站版本2.0的开发，根据设计师所做出的网页设计图，由我一人通过ps切图，使用html，css代码构建出完整的页面，使用jQuery完成与用户的交互逻辑。" },
+        { "project_detail": "<b>2015年7月-8月：</b>由于推行微信公众号，由我负责并完成了微信端页面的设计与开发，同样使用ajax技术完成对后台返回的JSON数据的处理与用户的交互。<br />微信兼职列表GitHub:<a href=\"https://github.com/jokerhing/wechat_joglist/\">https://github.com/jokerhing/wechat_joglist/</a>；<br />渝高校招聘信息GitHub:<a href=\"https://github.com/jokerhing/college_info/\">https://github.com/jokerhing/college_info/</a>。并从其中学习到了一定的移动端标签知识" },
+        { "project_detail": "<b>2015年8月：</b>参加一个微商城的项目，通过与后端的沟通，使用bootstrap完成前端页面的设计与开发。" },
+        { "project_detail": "<b>2015年10月：</b>原工作室创建新项目，目前为其项目编写后台管理页面，所有数据与用户交互均通过使用jQuery的ajax完成。" }
+    ],
+    "language": {
+        "english": "<b>英语：</b>CET-4级(464分)，有良好的英语阅读能力和理解能力以及听力",
+        "chinese": "<b>中文：</b>普通话水平测试二级乙等(85分)"
+    },
+    "myself": "拥有足够的好奇心，对于新奇的事物敢于尝试。拥有良好的自学能力。和善，好沟通。对于互联网有着极大的热情"
 }
