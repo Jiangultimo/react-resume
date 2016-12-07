@@ -1,26 +1,19 @@
+var path = require('path');
 var webpack = require('webpack');
-var commonPlugin = new webpack.optimize.CommonsChunkPlugin('common.js'); //引入提取公共代码的插件
 
 module.exports = {
-    entry: {
-        index: './index.js'
-    }, //入口文件
+    entry: ['webpack/hot/dev-server',path.resolve(__dirname,'app/scripts/main.js')],
     output: {
-        path: 'scripts',
-        filename: '[name].js'
+        path: 'build',
+        filename: 'app.js'
     },
-    plugins: [commonsPlugin],
     module: {
         loaders: [{
-                test: /\.js$/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['es2015', 'react']
-                }
-            },
-            {
-
+            test: /\.jsx$/,
+            loader: 'babel-loader',
+            query: {
+                presets: ['es2015', 'react']
             }
-        ]
+        }]
     }
 }
