@@ -13,7 +13,6 @@ var router = {
         } ());
     },
     ['/index']: function (_content, _req, _res) {
-        var htmlStr = "<p>hello world</p>";
         var template = swig.compileFile('./views/index.html');
         var name = {
             name: 'hing'
