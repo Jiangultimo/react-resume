@@ -23,6 +23,7 @@
   "dependencies": {
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
+    "swig": "^1.4.2",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   },
