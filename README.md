@@ -32,3 +32,7 @@ loaders: [{
 
 - 在安装的sass-loader的时候。老是报错安装失败！！！我又醉了！！！在react-demo里面也是正常安装的！！！后来发现，在 WINDOWS 环境下，需要手动安装python环境！！！（顺便一题，现在安装sass-loder需要依赖node-sass）
 - 日起狗来，真的是键盘都永不顺畅。。。
+- 然后，我安装了python2，再次安装node-sass的时候提示缺少.net Frame2.0的SDk，最后我换成了pyhthon3
+- 然后再次安装node-sass的时候 --save不行，最终进行了全局安装
+- 安装sass-loder的时候提示node版本过低！！！（4.6），卸载node从官网下载最新稳定版本
+- 安装成功。。。
