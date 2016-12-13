@@ -6,7 +6,7 @@ var router = {
         console.log(pathName);
         pathName = (function () {
             if (!self[pathName]) {
-                res.end();
+                self[pathName] = self['/404']('there is nothing.',req,res);
             } else {
                 self[pathName](pathName, req, res);
             }
@@ -15,7 +15,7 @@ var router = {
     ['/index']: function (_content, _req, _res) {
         var template = swig.compileFile('./views/index.html');
         var name = {
-            name: 'hing'
+            title: '个人简历--蒋正兴'
         };
         var output = template(name);
         _res.writeHead(200, { 'content-type': 'text/html' });
