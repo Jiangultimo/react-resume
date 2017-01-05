@@ -5,7 +5,7 @@ module.exports = {
     entry: [path.resolve(__dirname, 'scripts/main.js')],
     output: {
         path: path.resolve(__dirname, 'views'),
-        filename: 'app.js'
+        filename: 'index.js'
     },
     module: {
         loaders: [{
