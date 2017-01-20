@@ -34,18 +34,17 @@ swig.setDefaults({ autoescape: false });
 //}
 
 let index = {
-    render: function (pathName, req, res) {
-        console.log(pathName);
+    render:  (pathName, req, res) => {
         switch (pathName) {
             case '/index':
                 this.index(pathName, req, res);
                 break;
-                defalut:
+            default:
                 this.notFound(pathName, req, res);
                 break;
         }
     },
-    index: function (_pathName, _req, _res) {
+    index:  (_pathName, _req, _res) => {
         let template = swig.compileFile('./views/index.html');
         let resData = {
             title: "personal-resume"
@@ -55,7 +54,7 @@ let index = {
         _res.write(output);
         _res.end();
     },
-    notFound: function (pathName, req, res) {
+    notFound:  (pathName, req, res) => {
         res.writeHead(200, { 'content-type': 'text/html' });
         res.write('not found' + pathName);
         res.end();
