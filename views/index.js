@@ -58,12 +58,12 @@
 	 */
 	var React = __webpack_require__(2);
 	var ReactDOM = __webpack_require__(33);
-	__webpack_require__(184);
+	__webpack_require__(191);
 
 	//头
 	var ResumeTitle = __webpack_require__(188);
 
-	ReactDOM.render(React.createElement(ResumeTitle, null), document.getElementById('personal-resume'));
+	ReactDOM.render(React.createElement(ResumeTitle, null), document.getElementById('resumeHeader'));
 
 /***/ },
 /* 2 */
@@ -21757,46 +21757,8 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 184 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(185);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(187)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./index.scss", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./index.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 185 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(186)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "body {\n  background: #000; }\n", ""]);
-
-	// exports
-
-
-/***/ },
+/* 184 */,
+/* 185 */,
 /* 186 */
 /***/ function(module, exports) {
 
@@ -22162,7 +22124,47 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background: #000; }\n", ""]);
+	exports.push([module.id, "", ""]);
+
+	// exports
+
+
+/***/ },
+/* 191 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(192);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(187)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./common.scss", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./common.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 192 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(186)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "html, body {\n  background: #fff;\n  height: 100%; }\n\nbody {\n  margin: 0; }\n", ""]);
 
 	// exports
 
