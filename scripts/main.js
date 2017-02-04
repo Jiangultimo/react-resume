@@ -3,7 +3,7 @@
  */
 var React = require('react');
 var ReactDOM = require('react-dom');
-require('../static/common.scss');
+require('../static/css/common.scss');
 
 //头
 var ResumeTitle = require('./componentTitle.jsx');

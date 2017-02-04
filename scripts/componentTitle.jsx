@@ -1,14 +1,14 @@
 var React = require('react');
-require('../static/title.scss');
+require('../static/css/title.scss');
 
 var title = React.createClass({
     render:function(){
         return(
             <div className="resume-title">
-             i am a resume header
+                <i className="resume-i-logo"></i>
              </div>
         );
     }
-}); 
+});
 
 module.exports = title;
