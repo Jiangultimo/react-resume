@@ -8,25 +8,30 @@ module.exports = {
         filename: 'index.js'
     },
     module: {
-        loaders: [{
-            test: /\.jsx$/,
-            loader: 'babel-loader',
-            exclude: /node_modules/,
-            query: {
-                presets: ['es2015', 'react']
+        rules: [{
+                test: /\.jsx$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/,
+                query: {
+                    presets: ['es2015', 'react']
+                }
+            },
+            {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/,
+                query: {
+                    presets: ['es2015', 'react']
+                }
+            },
+            {
+                test: /\.scss$/,
+                loader: 'style-loader!css-loader!sass-loader'
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                loader: 'url-loader?limit=100000!img-loader?progressive=true'
             }
-        },
-        {
-            test: /\.js$/,
-            loader: 'babel-loader',
-            exclude: /node_modules/,
-            query: {
-                presets: ['es2015', 'react']
-            }
-        },
-        {
-            test: /\.scss$/,
-            loader: 'style!css!sass',
-        }]
+        ]
     }
 }
