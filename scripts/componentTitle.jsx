@@ -5,7 +5,9 @@ var title = React.createClass({
     render: function () {
         return (
             <div className="resume-title">
-                <i className="resume-i-logo"></i>
+                <i className="resume-i-logo">
+
+                </i>
              </div>
         );
     }
