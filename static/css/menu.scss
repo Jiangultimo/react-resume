@@ -1,3 +1,36 @@
-ul{
-    background: #000;
+ul.resume-menu{
+    float:left;
+    margin:0;
+    padding:0;
+    background: #fff;
+    list-style-type: none;
+    li{
+        float:left;
+        padding:5px 20px;
+        height: 40px;
+        line-height: 40px;
+        cursor:pointer;
+        color:#9B90C2;
+        &:hover{
+            animation-duration:.5s;
+            animation-name: menu-text;
+            color:#fff;
+            background: #ff3c00;
+            font-size:1.2em;
+        }
+    }
+}
+
+
+@keyframes menu-text{
+    from{
+        background:#fff;
+        color:#9B90C2;
+        font-size:1em;
+    }
+    to{
+        background:#ff3c00;
+        color:#fff;
+        font-size:1.2em;
+    }
 }

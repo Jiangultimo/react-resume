@@ -1,9 +1,9 @@
-var React = require('react');
+import React from 'react';
 import Menu from './componentMenu.jsx';
 
 require('../static/css/title.scss');
 
-var title = React.createClass({
+let title = React.createClass({
     render: function () {
         return (
             <div className="resume-title">

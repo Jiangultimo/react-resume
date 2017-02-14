@@ -5,3 +5,20 @@ html,body{
 body{
     margin:0;
 }
+
+.clearfix{
+    &::before{
+        content:'.';
+        visibility: hidden;
+        clear: both;
+        display: table;
+    }
+}
+
+
+.resume-div-wrapper{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:1200px;
+}

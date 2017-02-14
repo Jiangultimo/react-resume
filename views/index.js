@@ -9734,18 +9734,26 @@ function updateLink(linkElement, obj) {
 "use strict";
 
 
+var _react = __webpack_require__(52);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(101);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 /*
 * 入口文件
 */
 
-var React = __webpack_require__(52);
-var ReactDOM = __webpack_require__(101);
-
 __webpack_require__(184);
+__webpack_require__(191);
 //头
 var ResumeTitle = __webpack_require__(84);
 
-ReactDOM.render(React.createElement(ResumeTitle, null), document.getElementById('resumeHeader'));
+_reactDom2.default.render(_react2.default.createElement(ResumeTitle, null), document.getElementById('resumeHeader'));
 
 /***/ }),
 /* 83 */
@@ -9772,17 +9780,17 @@ var menu = _react2.default.createClass({
             _react2.default.createElement(
                 'li',
                 null,
-                '1'
+                '\u57FA\u672C\u4FE1\u606F'
             ),
             _react2.default.createElement(
                 'li',
                 null,
-                '2'
+                '\u6280\u80FD\u6811'
             ),
             _react2.default.createElement(
                 'li',
                 null,
-                '3'
+                '\u81EA\u6211\u611F\u89C9n(*\u2267\u25BD\u2266*)n'
             )
         );
     }
@@ -9797,26 +9805,27 @@ module.exports = menu;
 "use strict";
 
 
+var _react = __webpack_require__(52);
+
+var _react2 = _interopRequireDefault(_react);
+
 var _componentMenu = __webpack_require__(83);
 
 var _componentMenu2 = _interopRequireDefault(_componentMenu);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var React = __webpack_require__(52);
-
-
 __webpack_require__(185);
 
-var title = React.createClass({
+var title = _react2.default.createClass({
     displayName: 'title',
 
     render: function render() {
-        return React.createElement(
+        return _react2.default.createElement(
             'div',
             { className: 'resume-title' },
-            React.createElement('i', { className: 'resume-i-logo' }),
-            React.createElement(_componentMenu2.default, null)
+            _react2.default.createElement('i', { className: 'resume-i-logo' }),
+            _react2.default.createElement(_componentMenu2.default, null)
         );
     }
 });
@@ -9846,7 +9855,7 @@ exports = module.exports = __webpack_require__(53)();
 
 
 // module
-exports.push([module.i, ".resume-i-logo {\n  background: url(" + __webpack_require__(186) + ") no-repeat scroll 0 0;\n  display: block;\n  background-size: 50px 50px;\n  width: 50px;\n  height: 50px; }\n", ""]);
+exports.push([module.i, ".resume-i-logo {\n  background: url(" + __webpack_require__(186) + ") no-repeat scroll 0 0;\n  float: left;\n  background-size: 50px 50px;\n  width: 50px;\n  height: 50px; }\n", ""]);
 
 // exports
 
@@ -22155,7 +22164,7 @@ exports = module.exports = __webpack_require__(53)();
 
 
 // module
-exports.push([module.i, "ul {\n  background: #000; }\n", ""]);
+exports.push([module.i, "ul.resume-menu {\n  float: left;\n  margin: 0;\n  padding: 0;\n  background: #fff;\n  list-style-type: none; }\n  ul.resume-menu li {\n    float: left;\n    padding: 5px 20px;\n    height: 40px;\n    line-height: 40px;\n    cursor: pointer;\n    color: #9B90C2; }\n    ul.resume-menu li:hover {\n      animation-duration: .5s;\n      animation-name: menu-text;\n      color: #fff;\n      background: #ff3c00;\n      font-size: 1.2em; }\n\n@keyframes menu-text {\n  from {\n    background: #fff;\n    color: #9B90C2;\n    font-size: 1em; }\n  to {\n    background: #ff3c00;\n    color: #fff;\n    font-size: 1.2em; } }\n", ""]);
 
 // exports
 
@@ -22178,6 +22187,46 @@ if(false) {
 	if(!content.locals) {
 		module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./menu.scss", function() {
 			var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./menu.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 190 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(53)();
+// imports
+
+
+// module
+exports.push([module.i, "html, body {\n  background: #fff;\n  height: 100%; }\n\nbody {\n  margin: 0; }\n\n.clearfix::before {\n  content: '.';\n  visibility: hidden;\n  clear: both;\n  display: table; }\n\n.resume-div-wrapper {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  width: 1200px; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 191 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(190);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(81)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./common.scss", function() {
+			var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./common.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
