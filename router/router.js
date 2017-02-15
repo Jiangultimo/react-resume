@@ -1,40 +1,14 @@
-var swig = require('swig');
-swig.setDefaults({ autoescape: false });
-//var router = {
-//    render: function (pathName, req, res) {
-//        let self = this;
-//        pathName = (function () {
-//            for(var i in self){
-//                console.log(i);
-//            }
-//            if (!self[pathName]) {
-//                self[pathName] = self['/404']('there is nothing.',req,res);
-//            } else {
-//                self[pathName](pathName, req, res);
-//            }
-//        }());
-//    },
-//    ['/index']: function (_content, _req, _res) {
-//        console.log(_content);
-//        var template = swig.compileFile('./views/index.html');
-//        var name = {
-//            title: '个人简历--蒋正兴'
-//        };
-//        var output = template(name);
-//        _res.writeHead(200, { 'content-type': 'text/html' });
-//        _res.write(output);
-//        _res.end();
-//    },
-//    ['/404']: function (_content, _req, _res) {
-//        _res.writeHead(200, { 'content-type': 'text/html' });
-//        _res.write(_content);
-//        _res.end();
-//
-//    }
-//}
+const swig = require('swig-templates');
+const fs = require('fs');
+const mime = require('./MIME.js'); //媒体类型
+const path = require('path');
+
+swig.setDefaults({
+    autoescape: false
+});
 
 let index = {
-    render:  (pathName, req, res) => {
+    render: function(pathName, req, res) {
         switch (pathName) {
             case '/index':
                 this.index(pathName, req, res);
@@ -43,21 +17,33 @@ let index = {
                 this.notFound(pathName, req, res);
                 break;
         }
+        /*
+         * TODO 静态资源的读取
+         * 每次判断路由之后读取服务器的静态资源
+         */
     },
-    index:  (_pathName, _req, _res) => {
+    index: function(_pathName, _req, _res) {
         let template = swig.compileFile('./views/index.html');
-        let resData = {
-            title: "personal-resume"
-        };
-        let output = template(resData);
-        _res.writeHead(200, { 'content-type': 'text/html' });
+        let item = {};
+        item.title = 'imhere';
+        let output = template(item);
+        _res.writeHead(200, {
+            'content-type': 'text/html'
+        });
         _res.write(output);
         _res.end();
     },
-    notFound:  (pathName, req, res) => {
-        res.writeHead(200, { 'content-type': 'text/html' });
+    notFound: function(pathName, req, res) {
+        res.writeHead(200, {
+            'content-type': 'text/html'
+        });
         res.write('not found' + pathName);
         res.end();
+    },
+    staticSource: function(pathName, req, res) {
+        let staticPath = _pathName;
+        let ext = staticPath
+        ext = ext ? ext.slice(1) : 'unkonwn';
     }
 }
 
