@@ -1,16 +1,21 @@
 /*
 * 入口文件
 */
-
 import React from 'react';
 import ReactDOM from 'react-dom';
+import $ from 'jquery';
 
-require('../static/css/normalize/normalize.css');
-require('../static/css/common.scss');
+import '../static/css/normalize/normalize.css';
+import '../static/css/common.scss';
 //头
-let ResumeTitle = require('./componentTitle.jsx');
+const menuData = {
+    info: '基本信息',
+    skill: '技能树',
+    selfEvaluation: '自我感觉'
+}
+import Header from './componentHeader.jsx';
 
 ReactDOM.render(
-    <ResumeTitle/>,
+    <Header menu={menuData} source="/"/>,
     document.getElementById('resumeHeader')
 );
