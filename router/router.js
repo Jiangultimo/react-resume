@@ -14,7 +14,7 @@ let index = {
                 this.index(pathName, req, res);
                 break;
             default:
-                this.notFound(pathName, req, res);
+                this.staticSource(pathName, req, res);
                 break;
         }
         /*
@@ -41,9 +41,14 @@ let index = {
         res.end();
     },
     staticSource: function(pathName, req, res) {
-        let staticPath = _pathName;
-        let ext = staticPath
-        ext = ext ? ext.slice(1) : 'unkonwn';
+        //let staticPath = _pathName;
+        //let ext = staticPath
+        //ext = ext ? ext.slice(1) : 'unkonwn';
+        fs.readFile('./views/index.js', function(err, file) {
+            res.write(file);
+            res.end();
+        })
+
     }
 }
 
