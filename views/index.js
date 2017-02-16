@@ -19993,17 +19993,11 @@ var _componentHeader2 = _interopRequireDefault(_componentHeader);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+/*
+* 入口文件
+*/
+_reactDom2.default.render(_react2.default.createElement(_componentHeader2.default, { source: '/data.json' }), document.getElementById('resumeHeader'));
 //头
-var menuData = {
-    info: '基本信息',
-    skill: '技能树',
-    selfEvaluation: '自我感觉'
-}; /*
-   * 入口文件
-   */
-
-
-_reactDom2.default.render(_react2.default.createElement(_componentHeader2.default, { menu: menuData, source: '/' }), document.getElementById('resumeHeader'));
 
 /***/ }),
 /* 85 */
@@ -20062,10 +20056,10 @@ var componentHeader = function (_React$Component) {
                 type: 'GET',
                 cache: false,
                 success: function (item) {
-                    console.log(item);
+                    this.setState(item.menuData);
                 }.bind(this),
                 error: function (xhr, status, error) {
-                    console.lot(error.toString());
+                    console.log(error.toString());
                 }.bind(this)
             });
         }

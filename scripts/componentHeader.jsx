@@ -20,10 +20,10 @@ class componentHeader extends React.Component{
             type:'GET',
             cache:false,
             success:function(item){
-                console.log(item);
+                this.setState(item.menuData);
             }.bind(this),
             error:function(xhr,status,error){
-                console.lot(error.toString());
+                console.log(error.toString());
             }.bind(this)
         });
     }

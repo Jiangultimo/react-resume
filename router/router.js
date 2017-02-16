@@ -1,8 +1,7 @@
 const swig = require('swig-templates');
 const fs = require('fs');
-const mime = require('./MIME.js'); //媒体类型
 const path = require('path');
-
+const MIME = require('./MIME.js');
 swig.setDefaults({
     autoescape: false
 });
@@ -17,15 +16,11 @@ let index = {
                 this.staticSource(pathName, req, res);
                 break;
         }
-        /*
-         * TODO 静态资源的读取
-         * 每次判断路由之后读取服务器的静态资源
-         */
     },
     index: function(_pathName, _req, _res) {
         let template = swig.compileFile('./views/index.html');
         let item = {};
-        item.title = 'imhere';
+        item.title = '这难道要成为个人网站';
         let output = template(item);
         _res.writeHead(200, {
             'content-type': 'text/html'
@@ -41,13 +36,38 @@ let index = {
         res.end();
     },
     staticSource: function(pathName, req, res) {
-        //let staticPath = _pathName;
-        //let ext = staticPath
-        //ext = ext ? ext.slice(1) : 'unkonwn';
-        fs.readFile('./views/index.js', function(err, file) {
-            res.write(file);
-            res.end();
-        })
+        let realPath = path.join('views' + pathName); //拼接读取的文件。文件名应保持和路由一致
+        let extname = path.extname(pathName); //获取文件类型;
+        let ext = extname ? extname.slice(1) : 'unknown'; //获取文件后缀名用来判断MIME类型
+        let mimeType = ext ? MIME.types[ext] : 'text/plain'; //获取MIME类型
+        /*
+         * 使用fs.stat 判断文件是否存在，如果存在则读取文件
+         */
+        fs.stat(realPath, function(err, stats) {
+            if (err) {
+                res.writeHead(404, {
+                    'content-type': 'text/plain'
+                });
+                res.write(pathName + ' is not found');
+                res.end();
+            } else {
+                fs.readFile(realPath, function(err, file) {
+                    if (err) {
+                        res.writeHead(500, {
+                            'content-type': 'text/plain'
+                        });
+                        res.write(err);
+                        res.end();
+                    } else {
+                        res.writeHead(200, {
+                            'content-type': mimeType
+                        })
+                        res.write(file);
+                        res.end();
+                    }
+                });
+            }
+        });
 
     }
 }
