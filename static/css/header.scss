@@ -1,27 +1,34 @@
+.resume-header-top{
+    width:100px;
+    float:left;
+}
 ul.resume-menu{
     float:left;
     margin:0;
     padding:0;
+    width: 100%;
     background: #fff;
     list-style-type: none;
     li{
-        float:left;
-        padding:5px 20px;
+        text-align: center;
+        padding:5px;
         height: 40px;
+        width: 100%;
         line-height: 40px;
         cursor:pointer;
         color:#9B90C2;
+        a{
+            color:inherit;
+            text-decoration:none;
+        }
         &:hover{
             animation-duration:.5s;
             animation-name: menu-text;
             color:#fff;
             background: #ff3c00;
-            font-size:1.2em;
         }
     }
 }
-
-
 @keyframes menu-text{
     from{
         background:#fff;
@@ -31,6 +38,12 @@ ul.resume-menu{
     to{
         background:#ff3c00;
         color:#fff;
-        font-size:1.2em;
     }
+}
+.resume-i-logo{
+    background:url('../img/logo.jpeg') no-repeat scroll 0 0 ;
+    background-size: 100px 100px;
+    display: block;
+    width:100px;
+    height: 100px;
 }

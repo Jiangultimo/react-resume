@@ -4,18 +4,18 @@ html,body{
 }
 body{
     margin:0;
+    height: 100%;
 }
 
 .clearfix{
-    &::before{
+    &::after{
         content:'.';
         visibility: hidden;
         clear: both;
-        display: table;
+        display: block;
+        height:0;
     }
 }
-
-
 .resume-div-wrapper{
     display: block;
     margin-left:auto;

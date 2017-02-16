@@ -20020,9 +20020,7 @@ var _jquery = __webpack_require__(57);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-__webpack_require__(189);
-
-__webpack_require__(187);
+__webpack_require__(193);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20041,9 +20039,13 @@ var componentHeader = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (componentHeader.__proto__ || Object.getPrototypeOf(componentHeader)).call(this, props));
 
         _this.state = {
-            info: '基本信息',
-            skill: '技能树',
-            selfEvaluation: '自我感觉'
+            info: '',
+            skill: '',
+            selfEvaluation: '',
+            github: {
+                name: '',
+                link: ''
+            }
         };
         return _this;
     }
@@ -20068,7 +20070,7 @@ var componentHeader = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { className: 'resume-title' },
+                { className: 'resume-title clearfix' },
                 _react2.default.createElement('i', { className: 'resume-i-logo' }),
                 _react2.default.createElement(
                     'ul',
@@ -20087,6 +20089,24 @@ var componentHeader = function (_React$Component) {
                         'li',
                         null,
                         this.state.selfEvaluation
+                    ),
+                    _react2.default.createElement(
+                        'li',
+                        null,
+                        _react2.default.createElement(
+                            'a',
+                            { target: '_blank', href: this.state.github.link, title: this.state.github.name },
+                            'GitHub'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'li',
+                        null,
+                        _react2.default.createElement(
+                            'a',
+                            { href: this.state.zhihu, target: '_blank' },
+                            '\u77E5\u4E4E'
+                        )
                     )
                 )
             );
@@ -20107,26 +20127,13 @@ exports = module.exports = __webpack_require__(25)();
 
 
 // module
-exports.push([module.i, "html, body {\n  background: #fff;\n  height: 100%; }\n\nbody {\n  margin: 0; }\n\n.clearfix::before {\n  content: '.';\n  visibility: hidden;\n  clear: both;\n  display: table; }\n\n.resume-div-wrapper {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  width: 1200px; }\n", ""]);
+exports.push([module.i, "html, body {\n  background: #fff;\n  height: 100%; }\n\nbody {\n  margin: 0;\n  height: 100%; }\n\n.clearfix::after {\n  content: '.';\n  visibility: hidden;\n  clear: both;\n  display: block;\n  height: 0; }\n\n.resume-div-wrapper {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  width: 1200px; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 87 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(25)();
-// imports
-
-
-// module
-exports.push([module.i, "ul.resume-menu {\n  float: left;\n  margin: 0;\n  padding: 0;\n  background: #fff;\n  list-style-type: none; }\n  ul.resume-menu li {\n    float: left;\n    padding: 5px 20px;\n    height: 40px;\n    line-height: 40px;\n    cursor: pointer;\n    color: #9B90C2; }\n    ul.resume-menu li:hover {\n      animation-duration: .5s;\n      animation-name: menu-text;\n      color: #fff;\n      background: #ff3c00;\n      font-size: 1.2em; }\n\n@keyframes menu-text {\n  from {\n    background: #fff;\n    color: #9B90C2;\n    font-size: 1em; }\n  to {\n    background: #ff3c00;\n    color: #fff;\n    font-size: 1.2em; } }\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 87 */,
 /* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20141,20 +20148,7 @@ exports.push([module.i, "/*! normalize.css v5.0.0 | MIT License | github.com/nec
 
 
 /***/ }),
-/* 89 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(25)();
-// imports
-
-
-// module
-exports.push([module.i, ".resume-i-logo {\n  background: url(" + __webpack_require__(190) + ") no-repeat scroll 0 0;\n  float: left;\n  background-size: 50px 50px;\n  width: 50px;\n  height: 50px; }\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 89 */,
 /* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32401,32 +32395,7 @@ if(false) {
 }
 
 /***/ }),
-/* 187 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(87);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(32)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./menu.scss", function() {
-			var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./menu.scss");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
+/* 187 */,
 /* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -32453,32 +32422,7 @@ if(false) {
 }
 
 /***/ }),
-/* 189 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(89);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(32)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./title.scss", function() {
-			var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./title.scss");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
+/* 189 */,
 /* 190 */
 /***/ (function(module, exports) {
 
@@ -32490,6 +32434,46 @@ module.exports = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAIBAQE
 
 module.exports = __webpack_require__(84);
 
+
+/***/ }),
+/* 192 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(25)();
+// imports
+
+
+// module
+exports.push([module.i, ".resume-header-top {\n  width: 100px;\n  float: left; }\n\nul.resume-menu {\n  float: left;\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  background: #fff;\n  list-style-type: none; }\n  ul.resume-menu li {\n    text-align: center;\n    padding: 5px;\n    height: 40px;\n    width: 100%;\n    line-height: 40px;\n    cursor: pointer;\n    color: #9B90C2; }\n    ul.resume-menu li a {\n      color: inherit;\n      text-decoration: none; }\n    ul.resume-menu li:hover {\n      animation-duration: .5s;\n      animation-name: menu-text;\n      color: #fff;\n      background: #ff3c00; }\n\n@keyframes menu-text {\n  from {\n    background: #fff;\n    color: #9B90C2;\n    font-size: 1em; }\n  to {\n    background: #ff3c00;\n    color: #fff; } }\n\n.resume-i-logo {\n  background: url(" + __webpack_require__(190) + ") no-repeat scroll 0 0;\n  background-size: 100px 100px;\n  display: block;\n  width: 100px;\n  height: 100px; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 193 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(192);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(32)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./header.scss", function() {
+			var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./header.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);

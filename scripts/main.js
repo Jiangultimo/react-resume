@@ -11,6 +11,6 @@ import '../static/css/common.scss';
 import Header from './componentHeader.jsx';
 
 ReactDOM.render(
-    <Header  source="/data.json"/>,
+    <Header source="/data.json"/>,
     document.getElementById('resumeHeader')
 );
