@@ -43,7 +43,7 @@ let index = {
         /*
          * 使用fs.stat 判断文件是否存在，如果存在则读取文件
          */
-        fs.stat(realPath, function(err, stats) {
+        fs.stat(realPath, (err, stats) => {
             if (err) {
                 res.writeHead(404, {
                     'content-type': 'text/plain'
@@ -51,7 +51,7 @@ let index = {
                 res.write(pathName + ' is not found');
                 res.end();
             } else {
-                fs.readFile(realPath, function(err, file) {
+                fs.readFile(realPath, (err, file) => {
                     if (err) {
                         res.writeHead(500, {
                             'content-type': 'text/plain'
