@@ -16,7 +16,7 @@
 response.writeHead(200,{'content-type':'text/html'});
 ```
 
-#### 我去！！！！今晚就折腾了两个事
+#### 今晚就折腾了两个事
 - 在resume这个仓库里面，在 WINDOWS 环境下，已经在webpack.config.js里面写好了loader
 ```javascript
 loaders: [{
@@ -24,31 +24,31 @@ loaders: [{
             loader: 'babel-loader',
             exclude: /node_modules/,
             query: {
-                presets: ['es2015', 'react']
+                    presets: ['es2015', 'react']
                 }
 }]
 ```
-但是在执行webpack 的时候，即在编译main.js的时候，老是提醒没办法找到正确的loader，我就醉了，在react-demo是正常编译的，后来发现，js文件也要使用babel-loader
+但是在执行webpack 的时候，即在编译main.js的时候，老是提醒没办法找到正确的loader，在react-demo是正常编译的，后来发现，js文件也要使用babel-loader
 
-- 在安装的sass-loader的时候。老是报错安装失败！！！我又醉了！！！在react-demo里面也是正常安装的！！！后来发现，在 WINDOWS 环境下，需要手动安装python环境！！！（顺便一题，现在安装sass-loder需要依赖node-sass）
-- 日起狗来，真的是键盘都永不顺畅。。。
+- 在安装的sass-loader的时候。老是报错安装失败，但是在react-demo里面是正常安装的。后来发现，在 WINDOWS 环境下，需要手动安装python环境。（顺便一提，现在安装sass-loder需要依赖node-sass）
+- 日起狗来，真的是键盘都用不顺畅。。。
 - 然后，我安装了python2，再次安装node-sass的时候提示缺少.net Frame2.0的SDk，最后我换成了pyhthon3
 - 然后再次安装node-sass的时候 --save不行，最终进行了全局安装
-- 安装sass-loder的时候提示node版本过低！！！（4.6），卸载node从官网下载最新稳定版本
-- 安装成功。。。
+- 安装sass-loder的时候提示node版本过低（4.6），卸载node从官网下载最新稳定版本
+- 最终安装成功
 
 
 #### ================== 这里是分割线 ==================
 
 #### 接着上面的(2017.2.14)
-说一点废话，连个月了终于把项目弄上线了，本来三个做的项目结果最后只剩我一个人搞，啊哈哈，憔悴得很。
+说一点废话，连续两个月了终于把项目弄上线了，本来三个人做的项目结果最后只剩我一个人搞，哈哈，憔悴得很。
 
 ##### 使用webpack2
-嗯，前面的所写的东西都是用`webpack1.14.0`写的，当然，可能是以为新的更酷炫（那不然人家为什么要更新），所以这里改用`webpack2.2.1`。到目前为止体验到了一点的不同（首先去阅读了官方文档的）：在配置文件中将loaders改成了rules，然后再加载loader的时候必须要把名字写全比如`css-loader`不能写作`css`，必须写作`css-loader`
+嗯，前面的所写的东西都是用`webpack1.14.0`写的，当然，可能是以为新的更酷炫（那不然人家为什么要更新），所以这里改用`webpack2.2.1`。到目前为止体验到了一点的不同，首先感觉就是编译更快了：在配置文件中将loaders改成了rules，然后再加载loader的时候必须要把名字写全比如`css-loader`不能写作`css`，必须写作`css-loader`
 
 ##### `scss`文件中的图片打包
 * 在scss文件中，图片的引入使用相对路径即可
-* 打包的时候我用到了`url-loader`和`img-loader`，具体说明可以上[npmjs](http://www.npmjs.com)上面查看
+* 打包的时候我用到了`url-loader`和`img-loader`（应该还有`file-loader`），具体说明可以上[npmjs](http://www.npmjs.com)上面查看。
 
 #### 使用ES6
 * 将语法替换成了ES6的语法，但是还不是很熟练，所以还不是很规范
@@ -65,7 +65,9 @@ loaders: [{
 * 可以，很强势，已经基本完成了，整体开发技术栈为：
     1. NODE(原生)
     2. React
-    3. Webpack2.2.0
+    3. Webpack2.2.1
 * 然后使用Nginx部署这个NODE项目，使用pm2监听服务
 * 最后的工作就是完善以及优化代码了
 
+#### 错误的理解
+其实上面的问题不是问题，只是在下的理解错误而已。静态资源管理服务器入字面意思一样，只是用来管理静态资源的。而我无法正常加载是因为在写路由的时候，读取文件时的路由判断是没写推的/(ㄒoㄒ)/~~
