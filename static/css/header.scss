@@ -16,7 +16,7 @@ ul.resume-menu{
         width: 100%;
         line-height: 40px;
         cursor:pointer;
-        color:#9B90C2;
+        color:#000;
         a{
             color:inherit;
             text-decoration:none;
@@ -32,7 +32,7 @@ ul.resume-menu{
 @keyframes menu-text{
     from{
         background:#fff;
-        color:#9B90C2;
+        color:#000;
         font-size:1em;
     }
     to{

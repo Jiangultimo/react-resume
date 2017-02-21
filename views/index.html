@@ -17,6 +17,19 @@
     </section>
     </div>
     <script src="/index.js"></script>
+    <script>
+        /*
+         * prototype test
+         */
+        function Foo(a) {
+            this.a = a;
+        }
+        Foo.prototype.bar = function() {
+            console.log(this.a);
+        }
+        var b = new Foo('hehe');
+        b.bar();
+    </script>
 </body>
 
 </html>
