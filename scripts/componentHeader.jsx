@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
+import Ajax from './promise.js';
 
 import '../static/css/header.scss';
 
@@ -18,16 +19,12 @@ class componentHeader extends React.Component{
         }
     }
     componentDidMount(){
-        $.ajax({
-            url:this.props.source,
-            type:'GET',
-            cache:false,
-            success:function(item){
-                this.setState(item.menuData);
-            }.bind(this),
-            error:function(xhr,status,error){
-                console.log(error.toString());
-            }.bind(this)
+        let ajax = new Ajax();
+        ajax.getPromise(this.props.source,{},'GET').then( (item) => {
+            item = JSON.parse(item);
+            this.setState(item.menuData);
+        }).catch( (error) => {
+            console.log(error);
         });
     }
     render() {
