@@ -44,29 +44,51 @@ let index = {
          * 使用fs.stat 判断文件是否存在，如果存在则读取文件
          */
         fs.stat(realPath, (err, stats) => {
-            if (err) {
+            if (error) {
                 res.writeHead(404, {
                     'content-type': 'text/plain'
                 });
                 res.write(pathName + ' is not found');
                 res.end();
             } else {
-                fs.readFile(realPath, (err, file) => {
-                    if (err) {
-                        res.writeHead(500, {
-                            'content-type': 'text/plain'
-                        });
-                        res.write(err);
-                        res.end();
-                    } else {
-                        res.writeHead(200, {
-                            'content-type': mimeType
-                        })
-                        res.write(file);
-                        res.end();
-                    }
-                });
+                let readableStream = fs.createReadStream(realPath); //创建一个可读流
+                /*
+                 * pipe很好的监听了‘data’ 和 'end'事件
+                 */
+                readableStream.pipe(res); //使用管道来想客户端输送数据
             }
+            //var data = '';
+            // readableStream.on('data',function(chunk) {
+            //     data += chunk;
+            // });
+            // readableStream.on('end',function(){
+            //     console.log(res);
+            //     res.end(data);
+            // })
+
+            // if (err) {
+            //     res.writeHead(404, {
+            //         'content-type': 'text/plain'
+            //     });
+            //     res.write(pathName + ' is not found');
+            //     res.end();
+            // } else {
+            //     fs.readFile(realPath, (err, file) => {
+            //         if (err) {
+            //             res.writeHead(500, {
+            //                 'content-type': 'text/plain'
+            //             });
+            //             res.write(err);
+            //             res.end();
+            //         } else {
+            //             res.writeHead(200, {
+            //                 'content-type': mimeType
+            //             })
+            //             res.write(file);
+            //             res.end();
+            //         }
+            //     });
+            // }
         });
     }
 }
