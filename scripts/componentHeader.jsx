@@ -19,7 +19,7 @@ class componentHeader extends React.Component{
         }
     }
     componentDidMount(){
-        let ajax = new Ajax();
+        let ajax = Object.create(Ajax.prototype);
         ajax.getPromise(this.props.source,{},'GET').then( (item) => {
             item = JSON.parse(item);
             this.setState(item.menuData);
