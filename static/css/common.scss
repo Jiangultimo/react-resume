@@ -6,7 +6,9 @@ body{
     margin:0;
     height: 100%;
 }
-
+section{
+    float:left;
+}
 .clearfix{
     &::after{
         content:'.';

@@ -9,8 +9,15 @@ import '../static/css/normalize/normalize.css';
 import '../static/css/common.scss';
 //头
 import Header from './componentHeader.jsx';
+//内容
+import Content from './componentContent.jsx';
 
 ReactDOM.render(
     <Header source="/data/data.json"/>,
     document.getElementById('resumeHeader')
+);
+
+ReactDOM.render(
+    <Content />,
+    document.getElementById('resumeContent')
 );

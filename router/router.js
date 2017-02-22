@@ -44,7 +44,7 @@ let index = {
          * 使用fs.stat 判断文件是否存在，如果存在则读取文件
          */
         fs.stat(realPath, (err, stats) => {
-            if (error) {
+            if (err) {
                 res.writeHead(404, {
                     'content-type': 'text/plain'
                 });
@@ -52,6 +52,9 @@ let index = {
                 res.end();
             } else {
                 let readableStream = fs.createReadStream(realPath); //创建一个可读流
+                res.writeHead(200, {
+                    "content-type": mimeType
+                });
                 /*
                  * pipe很好的监听了‘data’ 和 'end'事件
                  */
