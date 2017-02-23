@@ -39,6 +39,13 @@ class componentHeader extends React.Component{
         return (
             <div className="resume-title clearfix">
                 <i className="resume-i-logo"></i>
+                <div className="resume-div__description">
+                    <b>Hing</b>
+                    <p>毕业于重庆邮电大学</p>
+                    <p>现就职于重庆猪八戒网络有限公司·前端开发工程师</p>
+                    <p>沉迷于代码网络游戏动漫画画日语无法自拔</p>
+                    <p>时刻坚信如果不是现在那是什么时候</p>
+                </div>
                 <ul className="resume-menu">
                     <li onClick={this.onClick} data-id="1">{this.state.info}</li>
                     <li onClick={this.onClick} data-id="2">{this.state.skill}</li>

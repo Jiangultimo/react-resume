@@ -38,7 +38,6 @@ class componentContent extends React.Component {
                 component = <Feeling />
                 break;
             default:
-                component = <p>welcom to my resume!</p>
             break;
         }
         return (

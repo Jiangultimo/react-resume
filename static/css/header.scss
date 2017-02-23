@@ -1,9 +1,18 @@
 .resume-header-top{
-    width:100px;
+    width:100%;
     float:left;
 }
+.resume-i-logo{
+    background:url('../img/logo.jpeg') no-repeat scroll 0 0 ;
+    background-size: 100px 100px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:100px;
+    width:100px;
+    height: 100px;
+}
 ul.resume-menu{
-    float:left;
     margin:0;
     padding:0;
     width: 100%;
@@ -13,7 +22,8 @@ ul.resume-menu{
         text-align: center;
         padding:5px;
         height: 40px;
-        width: 100%;
+        float: left;
+        width: 18%;
         line-height: 40px;
         cursor:pointer;
         color:#000;
@@ -24,26 +34,29 @@ ul.resume-menu{
         &:hover{
             animation-duration:.5s;
             animation-name: menu-text;
-            color:#fff;
-            background: #ff3c00;
+            color:#1b95e0;
+            //background: #ff3c00;
         }
     }
 }
 @keyframes menu-text{
     from{
-        background:#fff;
+        //background:#fff;
         color:#000;
         font-size:1em;
     }
     to{
-        background:#ff3c00;
-        color:#fff;
+        //background:#ff3c00;
+        color:#1b95e0;
     }
 }
-.resume-i-logo{
-    background:url('../img/logo.jpeg') no-repeat scroll 0 0 ;
-    background-size: 100px 100px;
-    display: block;
-    width:100px;
-    height: 100px;
+
+.resume-div__description{
+    padding:4%;
+    b{
+        display: block;
+    }
+    b,p{
+        text-align: center;
+    }
 }

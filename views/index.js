@@ -20096,6 +20096,35 @@ var componentHeader = function (_React$Component) {
                 { className: 'resume-title clearfix' },
                 _react2.default.createElement('i', { className: 'resume-i-logo' }),
                 _react2.default.createElement(
+                    'div',
+                    { className: 'resume-div__description' },
+                    _react2.default.createElement(
+                        'b',
+                        null,
+                        'Hing'
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        '\u6BD5\u4E1A\u4E8E\u91CD\u5E86\u90AE\u7535\u5927\u5B66'
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        '\u73B0\u5C31\u804C\u4E8E\u91CD\u5E86\u732A\u516B\u6212\u7F51\u7EDC\u6709\u9650\u516C\u53F8\xB7\u524D\u7AEF\u5F00\u53D1\u5DE5\u7A0B\u5E08'
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        '\u6C89\u8FF7\u4E8E\u4EE3\u7801\u7F51\u7EDC\u6E38\u620F\u52A8\u6F2B\u753B\u753B\u65E5\u8BED\u65E0\u6CD5\u81EA\u62D4'
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        '\u65F6\u523B\u575A\u4FE1\u5982\u679C\u4E0D\u662F\u73B0\u5728\u90A3\u662F\u4EC0\u4E48\u65F6\u5019'
+                    )
+                ),
+                _react2.default.createElement(
                     'ul',
                     { className: 'resume-menu' },
                     _react2.default.createElement(
@@ -20225,7 +20254,7 @@ exports = module.exports = __webpack_require__(31)();
 
 
 // module
-exports.push([module.i, ".resume-header-top {\n  width: 100px;\n  float: left; }\n\nul.resume-menu {\n  float: left;\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  background: #fff;\n  list-style-type: none; }\n  ul.resume-menu li {\n    text-align: center;\n    padding: 5px;\n    height: 40px;\n    width: 100%;\n    line-height: 40px;\n    cursor: pointer;\n    color: #000; }\n    ul.resume-menu li a {\n      color: inherit;\n      text-decoration: none; }\n    ul.resume-menu li:hover {\n      animation-duration: .5s;\n      animation-name: menu-text;\n      color: #fff;\n      background: #ff3c00; }\n\n@keyframes menu-text {\n  from {\n    background: #fff;\n    color: #000;\n    font-size: 1em; }\n  to {\n    background: #ff3c00;\n    color: #fff; } }\n\n.resume-i-logo {\n  background: url(" + __webpack_require__(189) + ") no-repeat scroll 0 0;\n  background-size: 100px 100px;\n  display: block;\n  width: 100px;\n  height: 100px; }\n", ""]);
+exports.push([module.i, ".resume-header-top {\n  width: 100%;\n  float: left; }\n\n.resume-i-logo {\n  background: url(" + __webpack_require__(189) + ") no-repeat scroll 0 0;\n  background-size: 100px 100px;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 100px;\n  width: 100px;\n  height: 100px; }\n\nul.resume-menu {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  background: #fff;\n  list-style-type: none; }\n  ul.resume-menu li {\n    text-align: center;\n    padding: 5px;\n    height: 40px;\n    float: left;\n    width: 18%;\n    line-height: 40px;\n    cursor: pointer;\n    color: #000; }\n    ul.resume-menu li a {\n      color: inherit;\n      text-decoration: none; }\n    ul.resume-menu li:hover {\n      animation-duration: .5s;\n      animation-name: menu-text;\n      color: #1b95e0; }\n\n@keyframes menu-text {\n  from {\n    color: #000;\n    font-size: 1em; }\n  to {\n    color: #1b95e0; } }\n\n.resume-div__description {\n  padding: 4%; }\n  .resume-div__description b {\n    display: block; }\n  .resume-div__description b, .resume-div__description p {\n    text-align: center; }\n", ""]);
 
 // exports
 
@@ -32646,11 +32675,6 @@ var componentContent = function (_React$Component) {
                     component = _react2.default.createElement(_componentFeeling2.default, null);
                     break;
                 default:
-                    component = _react2.default.createElement(
-                        'p',
-                        null,
-                        'welcom to my resume!'
-                    );
                     break;
             }
             return _react2.default.createElement(
