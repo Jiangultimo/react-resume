@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo|Gloria+Hallelujah');
 html,body{
     background: #fff;
     height: 100%;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 body{
     margin:0;
     height: 100%;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 section{
     float:left;
@@ -18,9 +21,18 @@ section{
         height:0;
     }
 }
-.resume-div-wrapper{
+.resume-div__background{
+    width:100%;
+    height: 100%;
     display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:1200px;
+    position: absolute;
+    top:0;
+    left:0;
+    //background:url('../img/bg.jpg') no-repeat scroll 0 0;
+    z-index:1;
+    filter: brightness(0.5);
+    img{
+        width: 100%;
+        height: 100%;
+    }
 }

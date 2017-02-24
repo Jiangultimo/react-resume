@@ -1,6 +1,9 @@
 /node_modules
 /npm-debug.log
 /views/*.css
+/views/*.png
+/views/*.jpg
+/views/*.jpeg
 /.DS_Store
 /static/.DS_Store
 /static/css/.DS_Store

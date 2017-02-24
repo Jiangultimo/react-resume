@@ -1,9 +1,11 @@
 .resume-header-top{
     width:100%;
     float:left;
+    position: relative;
+    z-index:2;
 }
 .resume-i-logo{
-    background:url('../img/logo.jpeg') no-repeat scroll 0 0 ;
+    background:url('../img/logo.png') no-repeat scroll 0 0 ;
     background-size: 100px 100px;
     display: block;
     margin-left:auto;
@@ -16,47 +18,75 @@ ul.resume-menu{
     margin:0;
     padding:0;
     width: 100%;
-    background: #fff;
     list-style-type: none;
     li{
         text-align: center;
         padding:5px;
-        height: 40px;
-        float: left;
-        width: 18%;
-        line-height: 40px;
+        height: 50px;
+        width:50px;
+        line-height: 50px;
+        border-radius:50%;
+        border:1px solid #e3e3e3;
         cursor:pointer;
-        color:#000;
+        color:#fff;
+        float: left;
+        animation: 5s bubble infinite alternate;
         a{
             color:inherit;
             text-decoration:none;
+            transition:all .5s ease-in-out;
         }
         &:hover{
             animation-duration:.5s;
             animation-name: menu-text;
-            color:#1b95e0;
-            //background: #ff3c00;
+            box-shadow:10px 10px 10px #000;
+            width:50px;
+            height:50px;
+            line-height: 50px;
+            font-size:12px;
         }
     }
 }
 @keyframes menu-text{
     from{
         //background:#fff;
-        color:#000;
+        color:#fff;
         font-size:1em;
+        box-shadow:none;
     }
     to{
-        //background:#ff3c00;
-        color:#1b95e0;
+        box-shadow:10px 10px 10px #000;
+    }
+}
+
+@keyframes bubble{
+    from {
+        font-size:0;
+    }
+    to{
+        font-size: 12px;
     }
 }
 
 .resume-div__description{
     padding:4%;
+    transition: all .5s ease-in-out;
+    color:#fff;
+    font-family: 'Gloria Hallelujah', cursive;
+    //font-family: 'Pangolin', cursive;
+    &:hover{
+        //box-shadow:1px 1px 10px #ccc;
+        //border-radius:20px;
+    }
     b{
+        //font-family: 'Pangolin', cursive;
+        font-family: 'Gloria Hallelujah', cursive;
         display: block;
     }
     b,p{
         text-align: center;
+        a{
+            color:#fff;
+        }
     }
 }

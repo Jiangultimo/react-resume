@@ -41,17 +41,17 @@ class componentHeader extends React.Component{
                 <i className="resume-i-logo"></i>
                 <div className="resume-div__description">
                     <b>Hing</b>
-                    <p>毕业于重庆邮电大学</p>
-                    <p>现就职于重庆猪八戒网络有限公司·前端开发工程师</p>
-                    <p>沉迷于代码网络游戏动漫画画日语无法自拔</p>
-                    <p>时刻坚信如果不是现在那是什么时候</p>
+                    <p>Graduated from Chongqing University of Posts and Telecommunications</p>
+                    <p>Now working for <a href="http://www.zbj.com">ZBJ.COM</a> · Web FE Developer</p>
+                    <p>Addicted to coding, animation, drawing, learning japanese</p>
+                    <p>Trust if not now, when what is.</p>
                 </div>
                 <ul className="resume-menu">
                     <li onClick={this.onClick} data-id="1">{this.state.info}</li>
                     <li onClick={this.onClick} data-id="2">{this.state.skill}</li>
                     <li onClick={this.onClick} data-id="3">{this.state.selfEvaluation}</li>
                     <li><a target="_blank" href={this.state.github.link} title={this.state.github.name}>GitHub</a></li>
-                    <li><a href={this.state.zhihu} target="_blank">知乎</a></li>
+                    <li><a href={this.state.zhihu} target="_blank">Zhihu</a></li>
                 </ul>
             </div>
         );
