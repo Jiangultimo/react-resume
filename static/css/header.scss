@@ -19,17 +19,20 @@ ul.resume-menu{
     padding:0;
     width: 100%;
     list-style-type: none;
+    position: absolute;
+    top:0;
+    left:0;
     li{
         text-align: center;
         padding:5px;
         height: 50px;
+        margin-top:20px;
         width:50px;
         line-height: 50px;
         border-radius:50%;
         border:1px solid #e3e3e3;
         cursor:pointer;
         color:#fff;
-        float: left;
         animation: 5s bubble infinite alternate;
         a{
             color:inherit;

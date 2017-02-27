@@ -20521,6 +20521,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+//import '../static/css/skills.scss';
+
 var componentSkill = function (_React$Component) {
     _inherits(componentSkill, _React$Component);
 
@@ -20555,7 +20557,7 @@ exports = module.exports = __webpack_require__(27)();
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Baloo|Gloria+Hallelujah);", ""]);
 
 // module
-exports.push([module.i, "html, body {\n  background: #fff;\n  height: 100%;\n  font-family: 'Gloria Hallelujah', cursive; }\n\nbody {\n  margin: 0;\n  height: 100%;\n  font-family: 'Gloria Hallelujah', cursive; }\n\nsection {\n  float: left; }\n\n.clearfix::after {\n  content: '.';\n  visibility: hidden;\n  clear: both;\n  display: block;\n  height: 0; }\n\n.resume-div__background {\n  width: 100%;\n  height: 100%;\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 1;\n  filter: brightness(0.5); }\n  .resume-div__background img {\n    width: 100%;\n    height: 100%; }\n", ""]);
+exports.push([module.i, "html, body {\n  background: #fff;\n  height: 100%;\n  font-family: 'Gloria Hallelujah', cursive; }\n\nbody {\n  margin: 0;\n  height: 100%;\n  font-family: 'Gloria Hallelujah', cursive; }\n\n.clearfix::after {\n  content: '.';\n  visibility: hidden;\n  clear: both;\n  display: block;\n  height: 0; }\n\n.resume-div__background {\n  width: 100%;\n  height: 100%;\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 1;\n  filter: brightness(0.5); }\n  .resume-div__background img {\n    width: 100%;\n    height: 100%; }\n", ""]);
 
 // exports
 
@@ -20569,7 +20571,7 @@ exports = module.exports = __webpack_require__(27)();
 
 
 // module
-exports.push([module.i, ".resume-div__content__wrapper {\n  float: right;\n  padding: 10px 20px;\n  position: relative;\n  z-index: 2;\n  font-family: 'Gloria Hallelujah', cursive; }\n", ""]);
+exports.push([module.i, ".resume-div__content__wrapper {\n  float: right;\n  padding: 10px 20px;\n  position: relative;\n  z-index: 2;\n  font-family: 'Gloria Hallelujah', cursive;\n  color: #fff;\n  text-align: center;\n  width: 100%; }\n", ""]);
 
 // exports
 
@@ -20583,7 +20585,7 @@ exports = module.exports = __webpack_require__(27)();
 
 
 // module
-exports.push([module.i, ".resume-header-top {\n  width: 100%;\n  float: left;\n  position: relative;\n  z-index: 2; }\n\n.resume-i-logo {\n  background: url(" + __webpack_require__(196) + ") no-repeat scroll 0 0;\n  background-size: 100px 100px;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 100px;\n  width: 100px;\n  height: 100px; }\n\nul.resume-menu {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  list-style-type: none; }\n  ul.resume-menu li {\n    text-align: center;\n    padding: 5px;\n    height: 50px;\n    width: 50px;\n    line-height: 50px;\n    border-radius: 50%;\n    border: 1px solid #e3e3e3;\n    cursor: pointer;\n    color: #fff;\n    float: left;\n    animation: 5s bubble infinite alternate; }\n    ul.resume-menu li a {\n      color: inherit;\n      text-decoration: none;\n      transition: all .5s ease-in-out; }\n    ul.resume-menu li:hover {\n      animation-duration: .5s;\n      animation-name: menu-text;\n      box-shadow: 10px 10px 10px #000;\n      width: 50px;\n      height: 50px;\n      line-height: 50px;\n      font-size: 12px; }\n\n@keyframes menu-text {\n  from {\n    color: #fff;\n    font-size: 1em;\n    box-shadow: none; }\n  to {\n    box-shadow: 10px 10px 10px #000; } }\n\n@keyframes bubble {\n  from {\n    font-size: 0; }\n  to {\n    font-size: 12px; } }\n\n.resume-div__description {\n  padding: 4%;\n  transition: all .5s ease-in-out;\n  color: #fff;\n  font-family: 'Gloria Hallelujah', cursive; }\n  .resume-div__description b {\n    font-family: 'Gloria Hallelujah', cursive;\n    display: block; }\n  .resume-div__description b, .resume-div__description p {\n    text-align: center; }\n    .resume-div__description b a, .resume-div__description p a {\n      color: #fff; }\n", ""]);
+exports.push([module.i, ".resume-header-top {\n  width: 100%;\n  float: left;\n  position: relative;\n  z-index: 2; }\n\n.resume-i-logo {\n  background: url(" + __webpack_require__(196) + ") no-repeat scroll 0 0;\n  background-size: 100px 100px;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 100px;\n  width: 100px;\n  height: 100px; }\n\nul.resume-menu {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  list-style-type: none;\n  position: absolute;\n  top: 0;\n  left: 0; }\n  ul.resume-menu li {\n    text-align: center;\n    padding: 5px;\n    height: 50px;\n    margin-top: 20px;\n    width: 50px;\n    line-height: 50px;\n    border-radius: 50%;\n    border: 1px solid #e3e3e3;\n    cursor: pointer;\n    color: #fff;\n    animation: 5s bubble infinite alternate; }\n    ul.resume-menu li a {\n      color: inherit;\n      text-decoration: none;\n      transition: all .5s ease-in-out; }\n    ul.resume-menu li:hover {\n      animation-duration: .5s;\n      animation-name: menu-text;\n      box-shadow: 10px 10px 10px #000;\n      width: 50px;\n      height: 50px;\n      line-height: 50px;\n      font-size: 12px; }\n\n@keyframes menu-text {\n  from {\n    color: #fff;\n    font-size: 1em;\n    box-shadow: none; }\n  to {\n    box-shadow: 10px 10px 10px #000; } }\n\n@keyframes bubble {\n  from {\n    font-size: 0; }\n  to {\n    font-size: 12px; } }\n\n.resume-div__description {\n  padding: 4%;\n  transition: all .5s ease-in-out;\n  color: #fff;\n  font-family: 'Gloria Hallelujah', cursive; }\n  .resume-div__description b {\n    font-family: 'Gloria Hallelujah', cursive;\n    display: block; }\n  .resume-div__description b, .resume-div__description p {\n    text-align: center; }\n    .resume-div__description b a, .resume-div__description p a {\n      color: #fff; }\n", ""]);
 
 // exports
 
