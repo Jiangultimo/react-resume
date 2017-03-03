@@ -78,4 +78,7 @@ loaders: [{
 * 🤣自己封装了一下[Promise](https://github.com/Neras/Resume/blob/master/scripts/promise.js)
 * 稍微改变了promise的调用方式
 * 使用流（stream）和管道（pipe）来传输静态文件
-* 通过选择不同的导航来显示不用的内容 
+* 通过选择不同的导航来显示不用的内容
+* webhook test
+* webhook test
+* webhook success finally
