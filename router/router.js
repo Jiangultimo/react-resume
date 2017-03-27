@@ -9,7 +9,7 @@ swig.setDefaults({
 let index = {
     render: function(pathName, req, res) {
         switch (pathName) {
-            case '/index':
+            case '/react-resume/':
                 this.index(pathName, req, res);
                 break;
             default:
