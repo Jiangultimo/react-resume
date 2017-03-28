@@ -13,7 +13,7 @@ import Header from './componentHeader.jsx';
 import Content from './componentContent.jsx';
 
 ReactDOM.render(
-    <Header source="/data/data.json"/>,
+    <Header source="/react-resume/data.json"/>,
     document.getElementById('resumeHeader')
 );
 
