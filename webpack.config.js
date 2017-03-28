@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
     entry: [path.resolve(__dirname, 'scripts/main.js')],
     output: {
-        path: path.resolve(__dirname, 'views'),
+        path: path.resolve(__dirname, 'views/react-resume'),
         filename: 'index.js'
     },
     module: {
