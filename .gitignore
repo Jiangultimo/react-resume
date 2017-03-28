@@ -7,4 +7,4 @@
 /.DS_Store
 /static/.DS_Store
 /static/css/.DS_Store
-/index.js
+/views/index.js
