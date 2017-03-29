@@ -38,13 +38,13 @@ class componentHeader extends React.Component{
     render() {
         return (
             <div className="resume-title clearfix">
-                <i className="resume-i-logo"></i>
+                <i className="resume-i-logo" id="pro"></i>
                 <div className="resume-div__description">
                     <b>Hing</b>
-                    <p>Graduated from Chongqing University of Posts and Telecommunications</p>
-                    <p>Now working for <a href="http://www.zbj.com">ZBJ.COM</a> · Web FE Developer</p>
-                    <p>Addicted to coding, animation, drawing, learning japanese</p>
-                    <p>Trust if not now, when what is.</p>
+                    <p>毕业于重庆邮电大学</p>
+                    <p>现在就职于 <a href="http://www.zbj.com">ZBJ.COM</a> · 前端开发工程师</p>
+                    <p>沉迷于 Coding，动漫，游戏，正在学习日语和画画。</p>
+                    <p>信奉  如果不是现在，那是什么时候。</p>
                 </div>
                 <ul className="resume-menu">
                     <li onClick={this.onClick} data-id="1">{this.state.info}</li>

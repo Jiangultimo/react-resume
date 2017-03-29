@@ -1,8 +1,8 @@
 {
     "menuData" : {
-        "info": "me",
-        "skill": "Skills",
-        "selfEvaluation": "Sth.",
+        "info": "关于我",
+        "skill": "技能栈",
+        "selfEvaluation": "做成的",
         "github":{
             "name":"Neras",
             "link":"https://github.com/Neras"

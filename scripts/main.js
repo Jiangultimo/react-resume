@@ -7,6 +7,7 @@ import $ from 'jquery';
 
 import '../static/css/normalize/normalize.css';
 import '../static/css/common.scss';
+import '../static/scripts/move.js';
 //头
 import Header from './componentHeader.jsx';
 //内容
