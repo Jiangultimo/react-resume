@@ -32,6 +32,7 @@ let index = {
         res.writeHead(200, {
             'content-type': 'text/html'
         });
+
         res.write('not found' + pathName);
         res.end();
     },
@@ -48,7 +49,19 @@ let index = {
                 res.writeHead(404, {
                     'content-type': 'text/plain'
                 });
-                res.write(pathName + ' is not found');
+
+                /*** 乱入的代码，获取uv文件中的访客数量，唯一id ***/
+                let logs = fs.readFileSync('uv.txt').toString();
+                let logsArr = logs.split('\n');
+                let arr = [];
+                for(let value of logsArr) {
+                    if(!!value.split(' ')[1] && arr.indexOf(value.split(' ')[1]) == -1){
+                        arr.push(value.split(' ')[1]);
+                    }
+                }
+                console.log(arr.length);
+                /*** 获取结束 ***/
+                res.write(logs);
                 res.end();
             } else {
                 let readableStream = fs.createReadStream(realPath); //创建一个可读流
