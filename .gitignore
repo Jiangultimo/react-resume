@@ -9,3 +9,4 @@
 /static/css/.DS_Store
 /views/index.js
 /views/react-resume/*
+/.vscode

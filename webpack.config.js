@@ -1,12 +1,29 @@
-var path = require('path');
-var webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-    entry: [path.resolve(__dirname, 'scripts/main.js')],
+    entry: [path.resolve(__dirname, 'src/index.js')],
     output: {
-        path: path.resolve(__dirname, 'views/react-resume'),
-        filename: 'index.js'
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].[hash].js',
+        chunkFilename:'[name].bundle.js'
     },
+    plugins:[
+        new CleanWebpackPlugin(['dist']),//每次打包清空上次打包文件
+        new HtmlWebpackPlugin({
+            title:'个人简历',
+            template:'./index.html'
+        }),
+        new webpack.HashedModuleIdsPlugin(),
+        new webpack.optimize.CommonsChunkPlugin({
+            name:'runtime'
+        }),
+        // new ExtractTextPlugin('[name].css')
+    ],
     module: {
         rules: [{
                 test: /\.jsx$/,
@@ -25,12 +42,12 @@ module.exports = {
                 }
             },
             {
-                test: /\.(scss|css)$/,
-                loader: 'style-loader!css-loader!sass-loader'
+                test: /\.css$/,
+                use: ['style-loader','css-loader']
             },
             {
-                test: /\.(jpe?g|png|gif|svg)$/i,
-                loader: 'url-loader?limit=100000!img-loader?progressive=true'
+                test: /\.(jpg|png|gif|svg)$/,
+                loader: 'file-loader'
             }
         ]
     }
