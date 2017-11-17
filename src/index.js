@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
 
+import Header from './components/common/Header/';
+
 class Index extends React.Component{
     constructor(props){
         super(props);
@@ -10,7 +12,7 @@ class Index extends React.Component{
     render(){
         return (
             <div className="resume-div__wrapper">
-                <p>hello world</p>
+                <Header />
             </div>
         );
         
