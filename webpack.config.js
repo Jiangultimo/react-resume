@@ -1,7 +1,7 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 
@@ -20,26 +20,21 @@ module.exports = {
         }),
         new webpack.HashedModuleIdsPlugin(),
         new webpack.optimize.CommonsChunkPlugin({
-            name:'runtime'
+            name:'common'//指定公共bundle的名称
         }),
-        // new ExtractTextPlugin('[name].css')
+        new ExtractTextPlugin('[name].css')
     ],
     module: {
-        rules: [{
-                test: /\.jsx$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/,
-                query: {
-                    presets: ['es2015', 'react']
-                }
-            },
+        rules: [
             {
                 test: /\.js$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/,
-                query: {
-                    presets: ['es2015', 'react']
-                }
+                use: {
+                    loader:'babel-loader',
+                    options:{
+                        presets:['env','es2015','react']
+                    }
+                },
+                exclude: /node_modules/
             },
             {
                 test: /\.css$/,
