@@ -1,5 +1,5 @@
-import React, { PropTypes } from 'react';
-
+import React  from 'react';
+import PropTypes from 'prop-types';
 const List = ({ active, children, onClick}) => {
     if(active){
         return <span>{children}</span>
@@ -23,4 +23,4 @@ Link.propTypes = {
     onClick: PropTypes.func.isRequired
 }
 
-export default Link;
+export default List;

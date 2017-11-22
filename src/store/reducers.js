@@ -20,6 +20,23 @@ function todos(state = [], action) {
 					text: action.text,
 					completed: false
 				}
-			]
+			];
+		case COMPLETE_TODO:
+			return [
+				...state.slice(0, action.index),
+				Object.assign({}, state[action.index], {
+					completed: true
+				})
+			];
+		default:
+			return state;
 	}
 }
+
+const todoApp = combineReducers({
+	visibilityFilter,
+	todos
+});
+
+export default todoApp;
+
