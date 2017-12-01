@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import todoApp from './reducer';
+import todoApp from './reducers';
 import { addTodo, toggleTodo, setVisibilityFilter, VisibilityFilters } from './actions';
 let store = createStore(todoApp);
 console.log(store.getState());

@@ -10,4 +10,8 @@
 /views/index.js
 /views/react-resume/*
 /.vscode
+node_modules
+npm-debug.log
+.DS_Store
+.vscode
 .idea
