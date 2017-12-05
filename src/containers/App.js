@@ -13,14 +13,16 @@ class App extends Component {
 	}
 
 	render() {
-		const { dispatch, visibleTools, visibilityFilter } = this.props;
+		const { dispatch, visibileTodos, visibilityFilter } = this.props;
+		console.log(this.props);
+		console.log(visibilityFilter);
 		return (
 			<div>
 				<AddTodo
-					onAddClick = {text => dispatch(text)}
+					onAddClick = {text => dispatch(addTodo(text))}
 				/>
 				<TodoList
-					todos = {visibleTools}
+					todos = {visibileTodos}
 					onTodoClick={ index => dispatch(completeTodo(index))}
 				/>
 				<Footer
@@ -32,17 +34,17 @@ class App extends Component {
 	}
 }
 
-App.propTypes = {
-	visibileTodos: PropTypes.arrayOf(PropTypes.shape({
-		text: PropTypes.string.isRequired,
-		complemted: PropTypes.bool.isRequired
-	}).isRequired).isRequired,
-	visibilityFilter: PropTypes.oneOf([
-		'SHOW_ALL',
-		'SHOW_COMPLETED',
-		'SHOW_ACTIVE'
-	]).isRequired
-}
+// App.propTypes = {
+// 	visibileTodos: PropTypes.arrayOf(PropTypes.shape({
+// 		text: PropTypes.string.isRequired,
+// 		complemted: PropTypes.bool.isRequired
+// 	}).isRequired).isRequired,
+// 	visibilityFilter: PropTypes.oneOf([
+// 		'SHOW_ALL',
+// 		'SHOW_COMPLETED',
+// 		'SHOW_ACTIVE'
+// 	]).isRequired
+// }
 
 function selectTodos (todos, filter) {
 	switch (filter) {
@@ -56,6 +58,7 @@ function selectTodos (todos, filter) {
 }
 
 function select(state) {
+	console.log(state)
 	return {
 		visibleTodos: selectTodos(state.todos, state.visibilityFilter),
 		visibilityFilter: state.visibilityFilter

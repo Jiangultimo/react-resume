@@ -32,6 +32,7 @@ import todoApp from './store/reducers';
 
 let store = createStore(todoApp);
 let rootElement = document.getElementById('app');
+console.log(store);
 render(
 	<Provider store={store}>
 		<App />

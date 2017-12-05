@@ -26,7 +26,8 @@ function todos(state = [], action) {
 				...state.slice(0, action.index),
 				Object.assign({}, state[action.index], {
 					completed: true
-				})
+				}),
+				...state.slice(action.index + 1)
 			];
 		default:
 			return state;
