@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './style.css';
 
+import Layout from './components/common/Layout/';
 import Header from './components/common/Header/';
 
 class Index extends React.Component{
@@ -11,9 +11,9 @@ class Index extends React.Component{
 
     render(){
         return (
-            <div className="resume-div__wrapper">
+            <Layout>
                 <Header />
-            </div>
+            </Layout>
         );
 
     }

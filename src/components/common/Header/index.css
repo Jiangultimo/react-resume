@@ -1,0 +1,28 @@
+.resume-header__wrapper{
+    display: block;
+    width:100%;
+    background-color: #5DAC81;
+}
+.resume-img__profile{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.resume-div__intro{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    padding: 15px;
+}
+.resume-dl__group{
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+.resume-dd__item{
+    margin:0;
+}
