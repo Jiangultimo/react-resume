@@ -14,6 +14,15 @@ export default {
            key:'CET',
            label: '',
            val: '英语考过了CET4'
+       },
+       {
+           key:'hobby',
+           label:'',
+           val: '爱好动漫，游戏，Coding'
+       },
+       {
+           key:'github',
+           val:'GitHub地址：https://github.com/Neras'
        }
    ]
 }
