@@ -1,16 +1,16 @@
 import React from 'react';
 import './index.css';
 
-class Projects extends React.Component {
-    constructor(props) {
+class Skills extends React.Component{
+    constructor(props){
         super(props);
     }
 
     render() {
         return (
-            <p>i am projects</p>
+            <p>i am skills</p>
         );
     }
 }
 
-export default Projects
+export default Skills;
