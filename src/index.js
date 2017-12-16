@@ -8,6 +8,8 @@ import Projects from './components/Projects/';
 import Honor from './components/Honor/';
 import SelfEvaluation from './components/SelfEvaluation/';
 
+import './static/style.css';
+
 class Index extends React.Component{
     constructor(props){
         super(props);
@@ -17,10 +19,13 @@ class Index extends React.Component{
         return (
             <Layout>
                 <Header />
-                <Skills/>
-                <Projects/>
-                <Honor/>
-                <SelfEvaluation/>
+                <div className="resume-div__content">
+                    <Skills/>
+                    <Projects/>
+                    <Honor/>
+
+                    <SelfEvaluation/>
+                </div>
             </Layout>
         );
 

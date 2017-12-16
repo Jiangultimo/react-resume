@@ -21,6 +21,10 @@ export default {
            val: '爱好动漫，游戏，Coding'
        },
        {
+           key:'expectJob',
+           val:'期望奋战在前端工程师这个职业'
+       },
+       {
            key:'github',
            val:'GitHub地址：https://github.com/Neras'
        }

@@ -1,7 +1,8 @@
 .resume-header__wrapper{
     display: block;
     width:100%;
-    background-color: #5DAC81;
+    background-color: #222;
+    /*background-color: #5DAC81;*/
 }
 .resume-img__profile{
     width:200px;
