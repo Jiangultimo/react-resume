@@ -2,11 +2,10 @@
     display: block;
     width:100%;
     background-color: #222;
-    /*background-color: #5DAC81;*/
 }
 .resume-img__profile{
-    width:200px;
-    height: 200px;
+    width:150px;
+    height: 150px;
     border-radius: 50%;
     display: block;
     margin-left: auto;

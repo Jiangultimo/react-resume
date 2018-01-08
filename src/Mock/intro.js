@@ -16,17 +16,12 @@ export default {
            val: '英语考过了CET4'
        },
        {
-           key:'hobby',
-           label:'',
-           val: '爱好动漫，游戏，Coding'
-       },
-       {
            key:'expectJob',
            val:'期望奋战在前端工程师这个职业'
        },
        {
            key:'github',
-           val:'GitHub地址：https://github.com/Neras'
+           val:'https://github.com/Neras'
        }
    ]
 }

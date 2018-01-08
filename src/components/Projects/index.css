@@ -1,0 +1,14 @@
+.resume-a__link{
+    color: #666;
+    text-decoration: none;
+}
+.resume-a__link:hover{
+    text-decoration: underline;
+}
+.resume-div__projects__wrapper{
+    width: 800px;
+}
+.resume-div__project{
+    width: 388px;
+    display: inline-block;
+}

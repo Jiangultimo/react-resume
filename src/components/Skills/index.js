@@ -13,6 +13,7 @@ class Skills extends React.Component{
         console.log(SkillsInfo.items);
         return (
             <div className="resume-div__content__wrapper">
+            <div className="resume-div__skill__wrapper">
                 <IntroHeader title={SkillsInfo.title}/>
                 <dl>
                 {
@@ -21,6 +22,7 @@ class Skills extends React.Component{
                     })
                 }
                 </dl>
+                </div>
             </div>
         );
     }
