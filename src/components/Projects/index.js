@@ -1,8 +1,8 @@
 import React from 'react';
 import './index.css';
 
-import IntroHeader from '../common/IntroHeader/';
-import projects from '../../Mock/projects.js';
+import IntroHeader from '@/components/common/IntroHeader/';
+import projects from '@/Mock/projects.js';
 
 import Detail from './detail.js';
 
@@ -12,9 +12,6 @@ class Projects extends React.Component {
         this.state = {
             info: projects
         }
-    }
-    componentDidMount() {
-        console.log(projects);
     }
     render() {
         return (

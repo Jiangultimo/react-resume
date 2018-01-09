@@ -1,8 +1,10 @@
 import React from 'react';
 
 import './index.css';
-import profile from '../../../static/profile.jpg';
-import info from '../../../Mock/intro.js';
+import profile from '@/static/profile.jpg';
+import info from '@/Mock/intro.js';
+
+import IntroHeader from '@/components/common/IntroHeader/';
 
 
 class Header extends React.Component{
@@ -19,7 +21,7 @@ class Header extends React.Component{
                         {
                             info.intro.map( (val, index) => (
                                 val.key == 'github' ?
-                                 <dd key={val.key} className="resume-dd__item">GitHub: <a href={val.val}>{val.val}</a></dd> :
+                                 <dd key={val.key} className="resume-dd__item">GitHub: <a href={val.val} className="resume-a__github">{val.val}</a></dd> :
                                 <dd key={val.key} className="resume-dd__item">{val.val}</dd> 
                                 
                             ))

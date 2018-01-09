@@ -5,8 +5,6 @@ import Layout from './components/common/Layout/';
 import Header from './components/common/Header/';
 import Skills from './components/Skills/';
 import Projects from './components/Projects/';
-import Honor from './components/Honor/';
-import SelfEvaluation from './components/SelfEvaluation/';
 
 import './static/style.css';
 
@@ -22,9 +20,6 @@ class Index extends React.Component{
                 <div className="resume-div__content">
                     <Skills/>
                     <Projects/>
-                    <Honor/>
-
-                    <SelfEvaluation/>
                 </div>
             </Layout>
         );

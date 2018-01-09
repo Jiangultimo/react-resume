@@ -4,6 +4,7 @@
 body{
     padding:0;
     margin:0;
+    font-size: 12px;
 }
 
 .resume-div__wrapper{
@@ -12,7 +13,7 @@ body{
 }
 
 .resume-div__content__wrapper{
-    width: 800px;
+    width: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;

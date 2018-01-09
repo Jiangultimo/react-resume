@@ -5,12 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 
-const extractCSS = new ExtractTextPlugin('[name]-css.css');
-
-// const resolve =  dir => path.join(__dirname, '.', dir); //配置全局路径别名
-function resolve(dir) {
-    return path.join(__dirname, '.', dir);
-}
+const resolve =  dir => path.join(__dirname, '.', dir); //配置全局路径别名
 
 module.exports = {
     entry: [path.resolve(__dirname, 'src/index.js')],
@@ -30,7 +25,7 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin({
             name:'common'//指定公共bundle的名称
         }),
-        extractCSS
+        new ExtractTextPlugin('[name]-css.css')
     ],
     module: {
         rules: [
@@ -46,7 +41,10 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: extractCSS.extract(['css-loader','style-loader'])
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: 'css-loader'
+                })
             },
             {
                 test: /\.(jpg|png|gif|svg)$/,

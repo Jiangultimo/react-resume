@@ -6,9 +6,8 @@
     text-decoration: underline;
 }
 .resume-div__projects__wrapper{
-    width: 800px;
+    width: 500px;
 }
 .resume-div__project{
-    width: 388px;
-    display: inline-block;
+    width: 100%;
 }

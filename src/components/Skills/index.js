@@ -1,8 +1,8 @@
 import React from 'react';
 import './index.css';
 
-import IntroHeader from '../common/IntroHeader/';
-import SkillsInfo from '../../Mock/skills.js';
+import IntroHeader from '@/components/common/IntroHeader/';
+import SkillsInfo from '@/Mock/skills.js';
 
 class Skills extends React.Component{
     constructor(props){
@@ -10,7 +10,6 @@ class Skills extends React.Component{
     }
 
     render() {
-        console.log(SkillsInfo.items);
         return (
             <div className="resume-div__content__wrapper">
             <div className="resume-div__skill__wrapper">
